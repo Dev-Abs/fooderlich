@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 
-class Cart1 extends StatelessWidget {
-  const Cart1({super.key});
+class Card1 extends StatelessWidget {
+  const Card1({super.key});
   final String category = 'Editor\'s Choice';
   final String title = 'The Art of Dough';
   final String description = 'Learn to make the perfect bread.';
