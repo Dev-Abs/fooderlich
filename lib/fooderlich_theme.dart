@@ -8,6 +8,11 @@ class FooderlichTheme {
       color: Colors.black, // Enumeration? of colors
       fontWeight: FontWeight.w600, 
     ),
+    bodyMedium: GoogleFonts.openSans(
+      fontSize: 18.0,
+      color: Colors.black,
+      fontWeight: FontWeight.w600,
+    ),
     headlineSmall: GoogleFonts.openSans(
       fontSize: 32.0,
       color: Colors.black,
@@ -28,6 +33,11 @@ class FooderlichTheme {
   static TextTheme darkTextTheme = TextTheme(
     bodySmall: GoogleFonts.openSans(
       fontSize: 14.0,
+      color: Colors.white,
+      fontWeight: FontWeight.w600,
+    ),
+    bodyMedium: GoogleFonts.openSans(
+      fontSize: 18.0,
       color: Colors.white,
       fontWeight: FontWeight.w600,
     ),

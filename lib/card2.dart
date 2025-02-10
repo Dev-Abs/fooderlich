@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 
-
-class Card1 extends StatelessWidget {
-  const Card1({super.key});
+class Card2 extends StatelessWidget {
+  const Card2({super.key});
   final String category = 'Editor\'s Choice';
-  final String title = 'The Art of Dough';
-  final String description = 'Learn to make the perfect bread.';
-  final String chef = 'Abdullah Ubaid'; 
+  final String title = 'The Art of Pizza';
+  final String description = 'Learn to make the perfect pizza.';
+  final String chef = 'Abdullah Ubaid';
 
-  @override
   Widget build(BuildContext context) {
     return Center(
       child: Container(
@@ -16,7 +14,7 @@ class Card1 extends StatelessWidget {
         constraints: const BoxConstraints.expand(width: 350, height: 450),
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('/dough.jpeg'),
+            image: AssetImage('/pizza2.jpeg'),
             fit: BoxFit.cover,
           ),
           borderRadius: BorderRadius.all(Radius.circular(15.0)),

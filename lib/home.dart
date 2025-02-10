@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'card1.dart';
+import 'card2.dart';
+import 'card3.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -12,9 +14,8 @@ class _HomeState extends State<Home> {
   int _selectedIndex = 0;
   static List<Widget> pages = <Widget>[
     Card1(),
-    Container(color: Colors.red),
-    Container(color: Colors.green),
-    Container(color: Colors.blue),
+    Card2(),
+    Card3()
   ];
 
   void _onItemTapped(int index) {
