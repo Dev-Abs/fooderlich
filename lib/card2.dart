@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'author_card.dart';
+
 
 class Card2 extends StatelessWidget {
   const Card2({super.key});
@@ -19,25 +21,15 @@ class Card2 extends StatelessWidget {
           ),
           borderRadius: BorderRadius.all(Radius.circular(15.0)),
         ),
-        child: Stack(
-          children: <Widget>[
-            Text(category, style: Theme.of(context).textTheme.bodySmall),
-            Positioned(
-              top: 20,
-              child: Text(title, style: Theme.of(context).textTheme.headlineMedium),
+        child: Column(
+          children: [
+            AuthorCard(
+              authorName: 'Abdullah Ubaid',
+              title: 'Smoothie Connoisseur',
+              imageProvider: AssetImage('abdullahubaid.jpg'),
             ),
-            Positioned(
-              bottom: 30,
-              right: 0,
-              child: Text(description, style: Theme.of(context).textTheme.bodySmall),
-            ),
-            Positioned(
-              bottom: 0,
-              right: 0,
-              child: Text(chef, style: Theme.of(context).textTheme.bodyMedium),
-            ),
-          ],
-        ),
+            
+          ],)
       ),
     );
   }
