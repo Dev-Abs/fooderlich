@@ -18,6 +18,7 @@ class AuthorCard extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           CircleImage(
             imageProvider: imageProvider,
@@ -41,6 +42,16 @@ class AuthorCard extends StatelessWidget {
                 ),
               ),
             ],
+          ),
+          // fav icon button here
+          IconButton(
+            icon: const Icon(Icons.favorite_border),
+            iconSize: 30,
+            color: Colors.grey,
+            onPressed: () {
+              const snackBar = SnackBar(content: Text('Added to Favorites'));
+              ScaffoldMessenger.of(context).showSnackBar(snackBar);
+            },
           ),
         ],
         

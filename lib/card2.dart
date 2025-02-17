@@ -24,8 +24,8 @@ class Card2 extends StatelessWidget {
         child: Column(
           children: [
             AuthorCard(
-              authorName: 'Abdullah Ubaid',
-              title: 'Smoothie Connoisseur',
+              authorName: 'Abdullah U.',
+              title: 'Smoothie',
               imageProvider: AssetImage('abdullahubaid.jpg'),
             ),
             
